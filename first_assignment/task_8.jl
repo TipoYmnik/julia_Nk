@@ -23,7 +23,7 @@ function find_marker!(robot,side,max_num)
     end 
     for _ in 1:max_num
         if ismarker(robot)
-            return true              # === ismarker(robbot) && return true 
+            return true              # == ismarker(robbot) && return true 
         end 
         move!(robot,side)
     end
