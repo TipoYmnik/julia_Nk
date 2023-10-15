@@ -24,7 +24,7 @@ function along!(robot::Robot, direct::HorizonSide)
     return num_steps
 end
 
-function along_mark!(robot, direct)
+function along_mark!(robot::Robot, direct::HorizonSide)
     steps = 1
     putmarker!(robot)
     while try_move!(robot, direct)
@@ -41,7 +41,10 @@ function num_steps!(robot::Robot, direct::HorizonSide, num_steps)
     end
 end 
 
+
+
 r = Robot("task4.sit")
+
 
 main!(r)
 
